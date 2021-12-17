@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <title>Monroy y Asociados</title>
+</head>
+
+<body class="cuerpo_pagina">
+
+    <header class="fondo_menu">
+        <div class="container">
+            <div class="menu_principal">
+                <div class="menu_principal_imagen">
+                    <img src="img/logo.svg" alt="">
+                </div>
+
+                <div class="menu_principal_opciones">
+                    <div class="opciones_menu">
+                        <a href="#" id="inicio">Inicio</a>
+                        <a href="#" id="servicios">Servicios</a>
+                        <a href="#" id="equipo">Equipo</a>
+                        <a href="#" id="capacitaciones">Capacitaciones</a>
+                        <a href="#" id="contacto">Contacto</a>
+                        <a href="#" id="blog">Blog</a>
+                    </div>
+                    <div class="opciones_login">
+                        <a href="#" class="mx-4">
+                            <img src="img/pin.svg">
+                        </a>
+                        <a href="#" class="btn_login">
+                            <img src="img/login.svg">
+                            <p>Login</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contenedor_btn_movil" id="boton">
+                    <a href="#">
+                        <img src="img/menu.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="contendor_menu_movil ocultar" id="menu">
+        <div class="opciones_menu_movil">
+            <a href="#">Inicio</a>
+            <a href="#">Servicios</a>
+            <a href="#">Equipo</a>
+            <a href="#">Capacitaciones</a>
+            <a href="#">Contacto</a>
+            <a href="#">Blog</a>
+            <a href="#" class="btn_login_movil">
+                <img src="img/login.svg">
+                <p>Login</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="container seccion_principal">
+        <div class="seccion_1">
+            <p class="banner-1">
+                Calcule sus impuestos fácil y rápido
+            </p>
+            <p class="py-3 parrafo-info-extra">
+                ¿Tiene más preguntas sobre impuestos o necesitas presentar solicitudes especiales? Deje su correo
+                electrónico para ayudarle
+            </p>
+            <div class="formulario_correo">
+                <input type="text" placeholder="Escriba su correo aquí">
+                <button>Enviar</button>
+            </div>
+            <div class="acciones_contenedor">
+                <div class="acciones">
+                    <img src="img/cheque.svg">
+                    <p>Cobertura nacional</p>
+                </div>
+                <div class="acciones">
+                    <img src="img/cheque.svg">
+                    <p>1ra asesoría gratuitas</p>
+                </div>
+                <div class="acciones">
+                    <img src="img/cheque.svg">
+                    <p>Servicio con especialista contable</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="seccion_2 calculadora shadow">
+            <p class="banner_calculadora pb-3">Calculadora de IVA</p>
+            <div class="row_calculadora">
+                <div>
+                    <img class="img_info" src="img/info.svg" alt="">
+                    <p>Ventas totales </p>
+                </div>
+                <input class="texto_entrada" type="number" step="0.01">
+            </div>
+            <div class="row_calculadora">
+                <div>
+                    <img class="img_info" src="img/info.svg" alt="">
+                    <p>Compras totales </p>
+                </div>
+                <input class="texto_entrada" type="number" step="0.01">
+            </div>
+            <div class="row_calculadora">
+                <div>
+                    <img class="img_info" src="img/info.svg" alt="">
+                    <p>Eres contribuyente </p>
+                </div>
+                <div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                            value="option1">
+                        <label class="form-check-label" for="inlineRadio1">*Si</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                            value="option1">
+                        <label class="form-check-label" for="inlineRadio1">No</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row_calculadora_boton">
+                <a href="#">Calcular</a>
+            </div>
+            <hr>
+            <div class="row_calculadora">
+                <div>
+                    <img class="img_info" src="img/info.svg" alt="">
+                    <p>Impuestos de IVA </p>
+                </div>
+                <p>$0.00</p>
+            </div>
+            <div class="row_calculadora">
+                <div>
+                    <img class="img_info" src="img/info.svg" alt="">
+                    <p>Renta (pago cuenta) </p>
+                </div>
+                <p>$0.00</p>
+            </div>
+            <div class="row_calculadora">
+                <div>
+                    <img class="img_info" src="img/info.svg" alt="">
+                    <p>Total: </p>
+                </div>
+                <p class="total_calculadora">$0.00</p>
+            </div>
+            <hr>
+            <div>
+                <img class="imagen_calculadora" src="img/barras.svg">
+            </div>
+            <p class="small">*El resultado presentado es global y no considera todos los supuestos tributarios</p>
+            <p class="small">*Es necesario apoyarse con un experto contable para un cálculo más correcto</p>
+        </div>
+    </div>
+
+    <div class="seccion_dos">
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="col-12">
+                    <p class="banner-1 centrado">
+                        Servicios que se
+                        adaptan a su realidad
+                    </p>
+                </div>
+                <div class="col-11 col-md-4">
+                    <div class="servicios shadow">
+                        <div class="inicio_servicios">
+                            <p class="banner-2">
+                                Legal
+                            </p>
+                            <a href="#">
+                                <img src="img/cheque_derecha.svg" alt="">
+                            </a>
+                        </div>
+                        <p class="servicios_descripscion">
+                            Constitución de sociedades, obtención de NIT y NRC, fusión y transformación de sociedades y
+                            más.
+                        </p>
+                        <a href="#" class="btn_servicios">
+                            Contacto
+                        </a>
+                    </div>
+                </div>
+                <div class="col-11 col-md-4">
+                    <div class="servicios shadow">
+                        <div class="inicio_servicios_mod">
+                            <p class="banner-2">
+                                Impuestos &
+                                Contabilidad
+                            </p>
+                            <a href="#">
+                                <img src="img/cheque_derecha.svg" alt="">
+                            </a>
+                        </div>
+                        <p class="servicios_descripscion">
+                            Ejecutivos especialisados en realizar cálculos del importe al valor agregado IVA, Impuesto
+                            sobre la renta, planilla de empleados, etc.
+                        </p>
+                        <a href="#" class="btn_servicios">
+                            Contacto
+                        </a>
+                    </div>
+                </div>
+                <div class="col-11 col-md-4">
+                    <div class="servicios shadow">
+                        <div class="inicio_servicios">
+                            <p class="banner-2">
+                                Auditoría
+                            </p>
+                            <a href="#">
+                                <img src="img/cheque_derecha.svg" alt="">
+                            </a>
+                        </div>
+                        <p class="servicios_descripscion">
+                            Auditorías realizadas con el debído apego a las leyes administrativas y tributarias del
+                            país. Auditoría fiscal, financiera entre otros.
+                        </p>
+                        <a href="#" class="btn_servicios">
+                            Contacto
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="seccion_tres">
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="col-10 col-md-6 firma_uno">
+                    <p class="banner-1">
+                        Nuestra firma
+                    </p>
+                    <p id="parrafo-firma">
+                        Desde 1996, Monroy & Asociados somos una firma de contadores y auditores en la República de El
+                        Salvador. Actualmente, contamos con diversas acreditaciones que certifican la calidad y
+                        profesionalismo de nuestros servicios. En el 2021 comenzamos un nuevo proceso de acreditación
+                        internacional.
+                    </p>
+                    <div class="datos_firma">
+                        <div class="info_firma">
+                            <img src="img/cheque_derecha.svg">
+                            <a id="servicios_firma" href="#">
+                                <p>Explora todos nuestras servicios aquí</p>
+                            </a>
+                        </div>
+                        <div class="info_firma">
+                            <img src="img/cheque_derecha.svg">
+                            <a id="equipo_firma" href="#">
+                                <p>Conoce nuestro equipo de trabajo aquí</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-11 col-md-4 firma_dos">
+                    <img src="img/lapicero.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="seccion_auxiliar">
+        <img src="img/empresa_1.png" alt="">
+        <img src="img/empresa_2.png" alt="">
+        <img src="img/empresa_3.png" alt="">
+        <img src="img/empresa_4.png" alt="">
+    </div>
+
+    <div class="seccion_auxiliar">
+        <img src="img/empresa_5.png" alt="">
+        <img src="img/empresa_6.png" alt="">
+    </div>
+
+    <div class="slider_empresas">
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="col-12">
+
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/empresa_2_movil.png" class="d-block w-100 img_caruouselt">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/empresa_1_movil.png" class="d-block w-100 img_caruouselt">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/empresa_3_movil.png" class="d-block w-100 img_caruouselt">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/empresa_4_movil.png" class="d-block w-100 img_caruouselt">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/empresa_5_movil.png" class="d-block w-100 img_caruouselt">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/empresa_6_movil.png" class="d-block w-100 img_caruouselt">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="seccion_cuatro">
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="dividir">
+                    <div class="seccion-dividir-uno imagen_capacitaciones">
+                        <img src="img/oscar_home.svg">
+                    </div>
+                    <div class="seccion-dividir-dos capacitaciones_textos">
+                        <p class="banner-1">
+                            Capacitaciones
+                            con apoyo de Insaforp
+                        </p>
+                        <p class="parrafo_insa">
+                            Realizamos capacitaciones a las organizaciones que buscan mejorar el conocimiento,
+                            habilidades y
+                            conductuales. <br>
+                            Las capacitaciones cuentan con apoyo de INSAFORP.
+                        </p>
+                        <div class="botones_capacitaciones">
+                            <a id="boton_ver_capacitaciones" href="#">
+                                Ver capacitaciones
+                            </a>
+                            <a id="boton_aula" href="#">
+                                Aula virtual
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="testimonios">
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="col-12 col-md-10">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="testimonios_contenedor">
+                                    <div class="testi_uno">
+                                        <img src="img/testimonio_1.png">
+                                    </div>
+                                    <div class="testi_dos">
+                                        <p>
+                                            “La capacitación de finanzas para no financiertos, nos ayudo a aumentar la
+                                            productividad de nuestros colaboradores”
+                                        </p>
+                                        <p id="persona-testimonio">
+                                            Fernando Munez
+                                        </p>
+                                        <p id="empresa-testimonio">
+                                            Fondo Social para la Vivienda
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonios_contenedor">
+                                    <div class="testi_uno">
+                                        <img src="img/testimonio_2.png">
+                                    </div>
+                                    <div class="testi_dos">
+                                        <p>
+                                            “Agradecemos a Monroy & Asociados por las participaciones realizadas en los
+                                            webinars realizados por la cámara”
+                                        </p>
+                                        <p id="persona-testimonio">
+                                            Dr. Juan Carlos Nieto
+                                        </p>
+                                        <p id="empresa-testimonio">
+                                            Cámara de Comercio de España en El Salvador
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="col-10 col-md-3 imagen_footer no_ver_si">
+                    <img class="logo_foo" src="img/logo_footer.svg">
+                    <div class="redes_sociales_footer">
+                        <a href="#">
+                            <img src="img/whatsap.svg">
+                        </a>
+                        <a href="#">
+                            <img src="img/linkedin.svg">
+                        </a>
+                        <a href="#">
+                            <img src="img/facebook.svg">
+                        </a>
+                        <a href="#">
+                            <img src="img/ig.svg">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-10 col-md-3 contenido_footer pt-5">
+                    <p class="titulos_footer">Inicio</p>
+                    <a class="mt-3" href="#">Calculadora de impuestos</a>
+                    <a href="#">Nuestra firma</a>
+                    <a href="#">Site map</a>
+                    <a href="#">Privacidad y cookies</a>
+                </div>
+                <div class="col-10 col-md-3 contenido_footer pt-5">
+                    <p class="titulos_footer">Servicios</p>
+                    <a class="mt-3" href="#">Auditoría</a>
+                    <a href="#">Contabilidad</a>
+                    <a href="#">Consultoría</a>
+                    <a href="#">Impuestos</a>
+                    <a href="#">Legal</a>
+                </div>
+                <div class="col-10 col-md-3 contenido_footer pt-5">
+                    <p class="titulos_footer">Otros</p>
+                    <a class="mt-3" href="#">Aula virtual</a>
+                    <a href="#">Capacitaciones</a>
+                    <a href="#">Contacto</a>
+                    <a href="#">Blog</a>
+                </div>
+                <div class="col-10 col-md-3 imagen_footer no_ver">
+                    <img class="logo_foo" src="img/logo_footer.svg">
+                    <div class="redes_sociales_footer">
+                        <a href="" target="_blank">
+                            <img src="img/whatsap.svg">
+                        </a>
+                        <a href="https://www.linkedin.com/company/monroyyasociados/?viewAsMember=true" target="_blank">
+                            <img src="img/linkedin.svg">
+                        </a>
+                        <a href="https://www.facebook.com/MonroySV/" target="_blank">
+                            <img src="img/facebook.svg">
+                        </a>
+                        <a href="https://www.instagram.com/monroysv/" target="_blank">
+                            <img src="img/ig.svg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copy">
+        <p>Copyright © 2021 Monroy & Asociados. Derechos reservados</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
